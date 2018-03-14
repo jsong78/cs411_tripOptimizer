@@ -1,6 +1,6 @@
 var path = require('path'),
 	express = require('express'),
-	// bodyParser = require('body-parser'),
+	bodyParser = require('body-parser'),
 	app = express(),
 	// passport = require('passport'),
 	// config = require('./config'),
@@ -11,14 +11,14 @@ var path = require('path'),
 	// methodOverride = require('method-override'),
 	// session = require('express-session');
 
-// app.use(express.static('./backend/static/'));
+app.use(express.static('./backend/static/'));
 // app.use(express.static('./frontend/dist/'));
 
-// app.use(bodyParser.urlencoded({
-//   extended: true
-// }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
-// app.use(bodyParser.json());
+app.use(bodyParser.json());
 
 // Static routes
 // app.route('/').get(function(req, res) {
@@ -63,10 +63,6 @@ var path = require('path'),
 
 // start the server
 
-// app.listen(process.env.PORT || 3000, function(){
-//   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-// });
-
-app.listen(3000, function(){
-  console.log('Server is running on http://ec2-18-188-49-175.us-east-2.compute.amazonaws.com:3000');
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
