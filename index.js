@@ -1,15 +1,15 @@
 var path = require('path'),
 	express = require('express'),
-	bodyParser = require('body-parser'),
+	// bodyParser = require('body-parser'),
 	app = express(),
-	passport = require('passport'),
-	config = require('./config'),
-	User = require('./'),
-	router = express.Router(),
-	cookieSession = require('cookie-session'),
-	cookieParser = require('cookie-parser'),
-	methodOverride = require('method-override'),
-	session = require('express-session');
+	// passport = require('passport'),
+	// config = require('./config'),
+	// User = require('./'),
+	router = express.Router();
+	// cookieSession = require('cookie-session'),
+	// cookieParser = require('cookie-parser'),
+	// methodOverride = require('method-override'),
+	// session = require('express-session');
 
 // app.use(express.static('./backend/static/'));
 // app.use(express.static('./frontend/dist/'));
