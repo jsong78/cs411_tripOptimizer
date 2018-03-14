@@ -41,7 +41,7 @@ app.use(bodyParser.json());
 // });
 /* New things ================================================================ */
 
-// require('./backend/models').connect(config.dbUri);
+require('./backend/database');
 // require('./backend/auth/passport')(passport);
 
 // Initialize cookie sessions
